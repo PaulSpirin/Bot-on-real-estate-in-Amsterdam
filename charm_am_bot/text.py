@@ -22,8 +22,8 @@ ds_inform = (f'В проекте используется модель CatBoost.
              f'Best CatBoost MAE on Test data: 62035.051703360274\n'
              f'Best CatBoost R2 on Test data: 0.8017567955761038\n'
              f'---\n'
-             f'С этим и другими моими проектами Вы можете познакомитсяна моем GitHub: PaulSpirin.\n'
-             f'А так же связаться со мной LinkedIn: PavelSpirin и Telegram: @PaulSpirin')
+             f'С этим и другими моими проектами Вы можете познакомитсяна моем GitHub: https://github.com/PaulSpirin.\n'
+             f'А так же связаться со мной LinkedIn: https://www.linkedin.com/in/pavelspirin/ и Telegram: @PaulSpirin')
 
 start_bot_gen = (f'Начнем предсказание.\nВведите параметры недвижимости через запятую в формате '
                  f'"площадь, количество комнат, район (4 знака)".\n'
