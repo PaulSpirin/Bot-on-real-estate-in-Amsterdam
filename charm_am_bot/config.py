@@ -2,7 +2,7 @@
 
 # Хранение токена бота и других конфигурационных данных
 
-BOT_TOKEN = '6636347235:AAEUxHzL8BFkjAmAs1bmCVglQ9DB68mPx6A'
+BOT_TOKEN = 'HERE_YOUR_TELEGRAM_API'
 
 PHOTO_POST_MAP = 'post_map.jpg'
 PHOTO_PIPELINE = 'PipeLine_CatBoost.png'
