@@ -79,7 +79,17 @@ async def start_bot_gen_handler(callback_query: types.CallbackQuery):
 async def handle_input_data(message: types.Message):
     try:
         # Разбираем текст от пользователя на параметры
-        area, rooms, district = map(float, message.text.split(','))
+        input_values = message.text.split(',')
+
+        # Проверяем количество введенных параметров
+        if len(input_values) != 3:
+            raise ValueError("Введите все три параметра: площадь, количество комнат, код района")
+
+        # Проверяем на ввод целых чисел (отсекаем str)
+        try:
+            area, rooms, district = map(int, input_values)
+        except ValueError:
+            raise ValueError("Пожалуйста, введите целые числа для площади, количества комнат и кода района")
 
         # Проверяем корректность введенных данных
         if not (15 <= area <= 600):
